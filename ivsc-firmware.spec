@@ -8,7 +8,7 @@ Name:           ivsc-firmware
 Summary:        Intel iVSC firmware
 URL:            https://github.com/intel/ivsc-firmware
 Version:        0.0
-Release:        5.%{commitdate}git%{shortcommit}%{?dist}
+Release:        6.%{commitdate}git%{shortcommit}%{?dist}
 License:        Proprietary
 
 Source0:        https://github.com/intel/%{name}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
@@ -39,6 +39,9 @@ popd
 %{_prefix}/lib/firmware/vsc/
 
 %changelog
+* Sun Feb 04 2024 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.0-6.20221102git29c5eff
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_40_Mass_Rebuild
+
 * Thu Aug 03 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.0-5.20221102git29c5eff
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
 
